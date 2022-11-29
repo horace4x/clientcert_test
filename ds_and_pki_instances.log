@@ -1,0 +1,143 @@
+Script started on 2022-11-29 05:05:51-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="238" LINES="55"]
+]777;notify;Command completed;pki -u caadmin ca-cert-request-review 0x20\]777;precmd\]0;taylorherring@pki:~\]7;file://pki.example.com/home/taylorherring\[?2004h[taylorherring@pki ~]$ ^?[K[7mdscreate create-template ds.inf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdscreate create-template ds.inf
+[?2004l]777;preexec\]777;notify;Command completed;dscreate create-template ds.inf\]777;precmd\]0;taylorherring@pki:~\]7;file://pki.example.com/home/taylorherring\[?2004h[taylorherring@pki ~]$ [7msed -i \[27m
+[7m    -e "s/;instance_name = .*/instance_name = localhost/g" \[27m
+[7m    -e "s/;root_password = .*/root_password = Secret.123/g" \[27m
+[7m    -e "s/;suffix = .*/suffix = dc=example,dc=com/g" \[27m
+[7m    -e "s/;create_suffix_entry = .*/create_suffix_entry = True/g" \[27m
+[7m    -e "s/;self_sign_cert = .*/self_sign_cert = False/g" \[27m
+[7m    ds.inf[27m[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i \
+    -e "s/;instance_name = .*/instance_name = localhost/g" \
+    -e "s/;root_password = .*/root_password = Secret.123/g" \
+    -e "s/;suffix = .*/suffix = dc=example,dc=com/g" \
+    -e "s/;create_suffix_entry = .*/create_suffix_entry = True/g" \
+    -e "s/;self_sign_cert = .*/self_sign_cert = False/g" \
+    ds.inf
+[?2004l]777;preexec\]777;notify;Command completed;sed -i     -e "s/ instance_name = .*/instance_name = localhost/g"     -e "s/ root_password = .*/root_password = Secret.123/g"     -e "s/ suffix = .*/suffix = dc=example,dc=com/g"     -e "s/ create_suffix_entry = .*/create_suffix_entry = True/g"     -e "s/ self_sign_cert = .*/self_sign_cert = False/g"     ds.inf\]777;precmd\]0;taylorherring@pki:~\]7;file://pki.example.com/home/taylorherring\[?2004h[taylorherring@pki ~]$ su
+[?2004l]777;preexec\Password: 
+]777;notify;Command completed;exit\]777;precmd\]0;taylorherring@pki:/home/taylorherring\]7;file://pki.example.com/home/taylorherring\[?2004h[root@pki taylorherring]# [7mdscreate from-file ds.inf[27mdscreate from-file ds.inf
+[?2004l]777;preexec\Starting installation ...
+Validate installation settings ...
+Create file system structures ...
+Perform SELinux labeling ...
+Create database backend: dc=example,dc=com ...
+Perform post-installation tasks ...
+Completed installation for instance: slapd-localhost
+]777;notify;Command completed;dscreate from-file ds.inf\]777;precmd\]0;taylorherring@pki:/home/taylorherring\]7;file://pki.example.com/home/taylorherring\[?2004h[root@pki taylorherring]# [7mldapadd -H ldap://$HOSTNAME -x -D "cn=Directory Manager" -w Secret.123 << EOF[27m
+[7mdn: dc=pki,dc=example,dc=com[27m
+[7mobjectClass: domain[27m
+[7mdc: pki[27m
+[7mEOF[27m[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cldapadd -H ldap://$HOSTNAME -x -D "cn=Directory Manager" -w Secret.123 << EOF
+dn: dc=pki,dc=example,dc=com
+objectClass: domain
+dc: pki
+EOF
+[?2004l]777;preexec\adding new entry "dc=pki,dc=example,dc=com"
+
+]777;notify;Command completed;ldapadd -H ldap://$HOSTNAME -x -D "cn=Directory Manager" -w Secret.123 << EOF
+dn: dc=pki,dc=example,dc=com
+objectClass: domain
+dc: pki
+EOF\]777;precmd\]0;taylorherring@pki:/home/taylorherring\]7;file://pki.example.com/home/taylorherring\[?2004h[root@pki taylorherring]# pkispawn
+[?2004l]777;preexec\
+IMPORTANT:
+
+    Interactive installation currently only exists for very basic deployments!
+
+    For example, deployments intent upon using advanced features such as:
+
+        * Cloning,
+        * Elliptic Curve Cryptography (ECC),
+        * External CA,
+        * Hardware Security Module (HSM),
+        * Subordinate CA,
+        * etc.,
+
+    must provide the necessary override parameters in a separate
+    configuration file.
+
+    Run 'man pkispawn' for details.
+
+Subsystem (CA/KRA/OCSP/TKS/TPS) [CA]: 
+
+Tomcat:
+  Instance [pki-tomcat]: 
+  HTTP port [8080]: 
+  Secure HTTP port [8443]: 
+  AJP port [8009]: 
+  Management port [8005]: 
+
+Administrator:
+  Username [caadmin]: 
+  Password: 
+  Verify password: 
+  Import certificate (Yes/No) [N]? 
+  Export certificate to [/root/.dogtag/pki-tomcat/ca_admin.cert]: 
+
+Directory Server:
+  Hostname [pki.example.com]: 
+  Use a secure LDAPS connection (Yes/No/Quit) [N]? 
+  LDAP Port [389]: 
+  Bind DN [cn=Directory Manager]: 
+  Password: 
+  Base DN [o=pki-tomcat-CA]: 
+
+Security Domain:
+  Name [example.com Security Domain]: 
+
+Begin installation (Yes/No/Quit)? y
+
+Installing CA into /var/lib/pki/pki-tomcat.
+/usr/lib/python3.10/site-packages/urllib3/connection.py:458: SubjectAltNameWarning: Certificate for pki.example.com has no `subjectAltName`, falling back to check for a `commonName` for now. This feature is being removed by major browsers and deprecated by RFC 2818. (See https://github.com/urllib3/urllib3/issues/497 for details.)
+  warnings.warn(
+
+    ==========================================================================
+                                INSTALLATION SUMMARY
+    ==========================================================================
+
+      Administrator's username:             caadmin
+      Administrator's PKCS #12 file:
+            /root/.dogtag/pki-tomcat/ca_admin_cert.p12
+
+      To check the status of the subsystem:
+            systemctl status pki-tomcatd@pki-tomcat.service
+
+      To restart the subsystem:
+            systemctl restart pki-tomcatd@pki-tomcat.service
+
+      The URL for the subsystem is:
+            https://pki.example.com:8443/ca
+
+      PKI instances will be enabled upon system boot
+
+    ==========================================================================
+
+]777;notify;Command completed;pkispawn\]777;precmd\]0;taylorherring@pki:/home/taylorherring\]7;file://pki.example.com/home/taylorherring\[?2004h[root@pki taylorherring]# [7mpki -c Secret.123 client-init[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpki -c Secret.123 client-init
+[?2004l]777;preexec\NSS database already exists in /root/.dogtag/nssdb.
+Overwrite (y/N)? y
+]777;notify;Command completed;pki -c Secret.123 client-init\]777;precmd\]0;taylorherring@pki:/home/taylorherring\]7;file://pki.example.com/home/taylorherring\[?2004h[root@pki taylorherring]# pki -c Secret.123 client-initspawn[Kldapadd -H ldap://$HOSTNAME -x -D "cn=Directory Manager" -w Secret.123 << EOF
+dn: dc=pki,dc=example,dc=com
+objectClass: domain
+dc: pki
+EOF
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdscreate from-file ds.inf[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdsctl localhost remove --do-it[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Ppkidestroy[6Pexitpki -u caadmin ca-cert-request-review 0x7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc Secret.123 client-cert-request uid=testuserinit[Kspawn[K[5PEOFdc: pkiobjectClass: domaindn: dc=pki,dc=example,dc=com[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cldapadd -H ldap://$HOSTNAME -x -D "cn=Directory Manager" -w Secret.123 << EOF[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[49Pdn: dc=pki,dc=example,dc=com[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9PobjectClass: domain[12Pdc: pki[4PEOFpkispawn -c Secret.123 client-initcert-request uid=testuser[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pu caadmin ca-cert-request-review 0x7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpkidestroydsctl localhost remove --do-it[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdscreate from-file ds.infldapadd -H ldap://$HOSTNAME -x -D "cn=Directory Manager" -w Secret.123 << EOF
+dn: dc=pki,dc=example,dc=com
+objectClass: domain
+dc: pki
+EOF
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpkispawn[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -c Secret.123 client-init[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kexit
+[?2004l]777;preexec\exit
+]777;notify;Command completed;su\]777;precmd\]0;taylorherring@pki:~\]7;file://pki.example.com/home/taylorherring\[?2004h[taylorherring@pki ~]$ exit
+[?2004l]777;preexec\exit
+
+Script done on 2022-11-29 05:14:40-05:00 [COMMAND_EXIT_CODE="0"]

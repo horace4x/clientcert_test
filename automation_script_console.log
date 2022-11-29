@@ -1,0 +1,55 @@
+Script started on 2022-11-29 05:16:54-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="238" LINES="55"]
+]777;notify;Command completed;exit\]777;precmd\]0;taylorherring@pki:~\]7;file://pki.example.com/home/taylorherring\[?2004h[taylorherring@pki ~]$ exitpki -c Secret.123 client-init[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpython request-review-cert.py[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd /home/taylorherring/PycharmProjects/clientcert_test
+[?2004l]777;preexec\]777;notify;Command completed;cd /home/taylorherring/PycharmProjects/clientcert_test\]777;precmd\]0;taylorherring@pki:~/PycharmProjects/clientcert_test\]7;file://pki.example.com/home/taylorherring/PycharmProjects/clientcert_test\[?2004h[taylorherring@pki clientcert_test]$ cd /home/taylorherring/PycharmProjects/clientcert_test[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpki -c Secret.123 client-initexit[Kpython request-review-cert.py
+[?2004l]777;preexec\]777;notify;Command completed;exit\]777;precmd\]0;taylorherring@pki:~/PycharmProjects/clientcert_test\]7;file://pki.example.com/home/taylorherring/PycharmProjects/clientcert_test\[?2004h[taylorherring@pki clientcert_test]$ pki -c Secret.123 client-cert-request uid=testuser
+[?2004l]777;preexec\WARNING: UNTRUSTED ISSUER encountered on 'CN=pki.example.com,OU=pki-tomcat,O=example.com Security Domain' indicates a non-trusted CA cert 'CN=CA Signing Certificate,OU=pki-tomcat,O=example.com Security Domain'
+Trust this certificate (y/N)? y
+  Request ID: 0x7
+  Type: enrollment
+  Request Status: pending
+  Operation Result: success
+]777;notify;Command completed;pki -c Secret.123 client-cert-request uid=testuser\]777;precmd\]0;taylorherring@pki:~/PycharmProjects/clientcert_test\]7;file://pki.example.com/home/taylorherring/PycharmProjects/clientcert_test\[?2004h[taylorherring@pki clientcert_test]$ pki -u caadmin ca-cert-request-review 0x7
+[?2004l]777;preexec\Enter Password: 
+-------------------------------
+Retrieved certificate request 7
+-------------------------------
+  Request ID: 0x7
+  Profile: Manual User Dual-Use Certificate Enrollment
+  Type: enrollment
+  Status: pending
+
+  Key Generation:
+    cert_request_type: pkcs10
+    cert_request: -----BEGIN CERTIFICATE REQUEST-----
+MIICXzCCAUcCAQAwGjEYMBYGCgmSJomT8ixkAQEMCHRlc3R1c2VyMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAqOwkdSipqXwak5VaanhUYmRste+BXkEPNmtkHXli3NEGKbKLb+WBQkkA
+8FCanWQDrziStzRpYAutewxnyTQf4+xwBrY7sJAn81nKIEV4zV7TPc1P5FwxVC/UkzRwL5OvNett
+pFEyCWT4rPDq1J9hORIHzLOE7edbEpMy+qDkkWnIDQVeqOM8S7shHXYONTrUQZddI5cMsoJ/oOUR
+JUznls4tRfNSHMtu9Z5PpWmkEtGcVL7KbWIX02S/0hzKkzaDTISALlJAJV/Ng3Sqa5JOToWDhbbL
+hHLBCPo+l1VdTnOnlHwgbFwWDYCYobx/jc0q0DXJYCJzBft68So+a7u2wQIDAQABoAAwDQYJKoZI
+hvcNAQELBQADggEBAHymH4bQgfMIt/dRDqdE1rdmdZVRtvSIncTLGG6RyPlHezviZMZzuPG5l+0i
+B+Wyzr2HYpiMV5QDQa0GmgWFqsfzbM3c3Aht3TCW8XRLggjzzSJSbBPYxWzmjHaTsbrB6NXkt401
+702BpjkHSbYGlpgOfCjpRBjmSx+jMHu+9xAk/R5s5fe3WaYq3LKqj/o3rf4oKNQo5oBbEsz6JW4K
+tPOGSRDdTLsQQpW6uCfitjk7Z/kZdD7YqTNSq0fuZLxU7Qb62H3PNBsNs03QBdMWfNLrcTRUgMzg
+e4y7zjvAHITSicEw85E9rR6mWz3Cb/iJeenw4/VjCVD1ab2SLBmGE+Y=
+-----END CERTIFICATE REQUEST-----
+
+  Subject Name:
+    sn_uid: testuser
+
+  Requestor Information:
+    none
+
+Action (approve/reject/cancel/update/validate/assign/unassign): approve
+------------------------------
+Approved certificate request 7
+------------------------------
+  Request ID: 0x7
+  Type: enrollment
+  Request Status: complete
+  Operation Result: success
+  Certificate ID: 0x7]777;notify;Command completed;python request-review-cert.py\]777;precmd\]0;taylorherring@pki:~/PycharmProjects/clientcert_test\]7;file://pki.example.com/home/taylorherring/PycharmProjects/clientcert_test\[?2004h[taylorherring@pki clientcert_test]$ 
+[?2004l]777;notify;Command completed;python request-review-cert.py\]777;precmd\]0;taylorherring@pki:~/PycharmProjects/clientcert_test\]7;file://pki.example.com/home/taylorherring/PycharmProjects/clientcert_test\[?2004h[taylorherring@pki clientcert_test]$ exit
+[?2004l]777;preexec\exit
+
+Script done on 2022-11-29 05:17:41-05:00 [COMMAND_EXIT_CODE="0"]

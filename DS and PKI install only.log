@@ -1,0 +1,471 @@
+packages_installation short version:
+
+2022-11-13T15:36:41-0500 INFO --- logging initialized ---
+2022-11-13T15:36:41-0500 DDEBUG timer: config: 1 ms
+2022-11-13T15:36:41-0500 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2022-11-13T15:36:41-0500 DEBUG DNF version: 4.14.0
+2022-11-13T15:36:41-0500 DDEBUG Command: dnf install -y dogtag-pki 
+2022-11-13T15:36:41-0500 DDEBUG Installroot: /
+2022-11-13T15:36:41-0500 DDEBUG Releasever: 36
+2022-11-13T15:36:41-0500 DEBUG cachedir: /var/cache/dnf
+2022-11-13T15:36:41-0500 DDEBUG Base command: install
+2022-11-13T15:36:41-0500 DDEBUG Extra commands: ['install', '-y', 'dogtag-pki']
+2022-11-13T15:36:41-0500 DEBUG User-Agent: constructed: 'libdnf (Fedora Linux 36; workstation; Linux.x86_64)'
+2022-11-13T15:36:41-0500 DEBUG repo: using cache for: phracek-PyCharm
+2022-11-13T15:36:41-0500 DEBUG phracek-PyCharm: using metadata from Sun 16 Oct 2022 12:24:52 AM EDT.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: fedora
+2022-11-13T15:36:42-0500 DEBUG fedora: using metadata from Wed 04 May 2022 05:16:11 PM EDT.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: fedora-cisco-openh264
+2022-11-13T15:36:42-0500 DEBUG fedora-cisco-openh264: using metadata from Thu 06 Oct 2022 07:02:51 AM EDT.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: fedora-modular
+2022-11-13T15:36:42-0500 DEBUG fedora-modular: using metadata from Wed 04 May 2022 05:12:01 PM EDT.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: updates
+2022-11-13T15:36:42-0500 DEBUG updates: using metadata from Sat 12 Nov 2022 08:07:58 PM EST.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: updates-modular
+2022-11-13T15:36:42-0500 DEBUG updates-modular: using metadata from Sat 05 Nov 2022 01:09:17 PM EDT.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: google-chrome
+2022-11-13T15:36:42-0500 DEBUG google-chrome: using metadata from Thu 10 Nov 2022 04:11:09 PM EST.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: rpmfusion-nonfree-nvidia-driver
+2022-11-13T15:36:42-0500 DEBUG rpmfusion-nonfree-nvidia-driver: using metadata from Fri 11 Nov 2022 07:19:25 AM EST.
+2022-11-13T15:36:42-0500 DEBUG repo: using cache for: rpmfusion-nonfree-steam
+2022-11-13T15:36:42-0500 DEBUG rpmfusion-nonfree-steam: using metadata from Wed 24 Aug 2022 12:15:54 PM EDT.
+2022-11-13T15:36:42-0500 INFO Last metadata expiration check: 0:13:44 ago on Sun 13 Nov 2022 03:22:58 PM EST.
+2022-11-13T15:36:42-0500 DDEBUG timer: sack setup: 1051 ms
+2022-11-13T15:36:42-0500 DEBUG --> Starting dependency resolution
+2022-11-13T15:36:42-0500 DEBUG ---> Package apache-commons-cli.noarch 1.5.0-3.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package apache-commons-codec.noarch 1.15-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package apache-commons-io.noarch 1:2.8.0-7.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package apache-commons-lang3.noarch 3.12.0-5.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package apache-commons-logging.noarch 1.2-30.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package apache-commons-net.noarch 3.6-16.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki.x86_64 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-acme.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-base.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-ca.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-java.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-javadoc.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-kra.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-ocsp.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-server.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-theme.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-tks.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-tools.x86_64 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package dogtag-pki-tps.x86_64 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package esc.x86_64 1.1.2-12.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package httpcomponents-client.noarch 4.5.13-4.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package httpcomponents-core.noarch 4.4.13-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jackson-annotations.noarch 2.11.4-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jackson-core.noarch 2.11.4-7.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jackson-databind.noarch 2.11.4-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jackson-jaxrs-json-provider.noarch 2.11.4-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jackson-jaxrs-providers.noarch 2.11.4-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jackson-module-jaxb-annotations.noarch 2.11.4-7.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jakarta-activation.noarch 1.2.2-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jakarta-annotations.noarch 1.3.5-13.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package javapackages-tools.noarch 6.0.0-7.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jaxb-api.noarch 2.3.3-6.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jboss-jaxrs-2.0-api.noarch 1.0.0-18.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jboss-logging.noarch 3.4.1-11.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jboss-logging-tools.noarch 2.2.1-8.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jdeparser.noarch 2.0.3-10.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package jss.x86_64 5.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package ldapjdk.noarch 5.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package pki-resteasy-client.noarch 3.0.26-15.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package pki-resteasy-core.noarch 3.0.26-15.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package pki-resteasy-jackson2-provider.noarch 3.0.26-15.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package publicsuffix-list.noarch 20210518-4.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package python3-dogtag-pki.noarch 11.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package python3-pyasn1.noarch 0.4.8-8.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package python3-pyasn1-modules.noarch 0.4.8-8.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package slf4j.noarch 1.7.32-3.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package slf4j-jdk14.noarch 1.7.32-3.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcatjss.noarch 8.1.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package ecj.noarch 1:4.23-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package freeipa-healthcheck-core.noarch 0.11-2.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package nss-tools.x86_64 3.83.0-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package openldap-clients.x86_64 2.6.3-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package openssl.x86_64 1:3.0.5-2.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package python3-ldap.x86_64 3.4.3-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcat.noarch 1:9.0.65-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcat-el-3.0-api.noarch 1:9.0.65-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcat-jsp-2.3-api.noarch 1:9.0.65-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcat-lib.noarch 1:9.0.65-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcat-native.x86_64 1:1.2.35-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG ---> Package tomcat-servlet-4.0-api.noarch 1:9.0.65-1.fc36 will be installed
+2022-11-13T15:36:42-0500 DEBUG --> Finished dependency resolution
+2022-11-13T15:36:42-0500 DDEBUG timer: depsolve: 73 ms
+2022-11-13T15:36:42-0500 INFO Dependencies resolved.
+2022-11-13T15:36:42-0500 INFO ================================================================================
+ Package                           Arch     Version             Repo       Size
+================================================================================
+Installing:
+ [1m[32mdogtag-pki                       (B[m x86_64   11.1.0-1.fc36       fedora    8.6 k
+Installing dependencies:
+ [1m[32mapache-commons-cli               (B[m noarch   1.5.0-3.fc36        fedora     75 k
+ [1m[32mapache-commons-codec             (B[m noarch   1.15-6.fc36         fedora    301 k
+ [1m[32mapache-commons-io                (B[m noarch   1:2.8.0-7.fc36      fedora    283 k
+ [1m[32mapache-commons-lang3             (B[m noarch   3.12.0-5.fc36       fedora    558 k
+ [1m[32mapache-commons-logging           (B[m noarch   1.2-30.fc36         fedora     76 k
+ [1m[32mapache-commons-net               (B[m noarch   3.6-16.fc36         fedora    292 k
+ [1m[32mdogtag-pki-acme                  (B[m noarch   11.1.0-1.fc36       fedora    976 k
+ [1m[32mdogtag-pki-base                  (B[m noarch   11.1.0-1.fc36       fedora    270 k
+ [1m[32mdogtag-pki-ca                    (B[m noarch   11.1.0-1.fc36       fedora    1.3 M
+ [1m[32mdogtag-pki-java                  (B[m noarch   11.1.0-1.fc36       fedora    642 k
+ [1m[32mdogtag-pki-javadoc               (B[m noarch   11.1.0-1.fc36       fedora    2.0 M
+ [1m[32mdogtag-pki-kra                   (B[m noarch   11.1.0-1.fc36       fedora    283 k
+ [1m[32mdogtag-pki-ocsp                  (B[m noarch   11.1.0-1.fc36       fedora    120 k
+ [1m[32mdogtag-pki-server                (B[m noarch   11.1.0-1.fc36       fedora    2.6 M
+ [1m[32mdogtag-pki-theme                 (B[m noarch   11.1.0-1.fc36       fedora    1.8 M
+ [1m[32mdogtag-pki-tks                   (B[m noarch   11.1.0-1.fc36       fedora    119 k
+ [1m[32mdogtag-pki-tools                 (B[m x86_64   11.1.0-1.fc36       fedora    819 k
+ [1m[32mdogtag-pki-tps                   (B[m x86_64   11.1.0-1.fc36       fedora    492 k
+ [1m[32mecj                              (B[m noarch   1:4.23-1.fc36       updates   2.4 M
+ [1m[32mesc                              (B[m x86_64   1.1.2-12.fc36       fedora    167 k
+ [1m[32mfreeipa-healthcheck-core         (B[m noarch   0.11-2.fc36         updates    56 k
+ [1m[32mhttpcomponents-client            (B[m noarch   4.5.13-4.fc36       fedora    656 k
+ [1m[32mhttpcomponents-core              (B[m noarch   4.4.13-6.fc36       fedora    631 k
+ [1m[32mjackson-annotations              (B[m noarch   2.11.4-6.fc36       fedora     78 k
+ [1m[32mjackson-core                     (B[m noarch   2.11.4-7.fc36       fedora    351 k
+ [1m[32mjackson-databind                 (B[m noarch   2.11.4-6.fc36       fedora    1.3 M
+ [1m[32mjackson-jaxrs-json-provider      (B[m noarch   2.11.4-6.fc36       fedora     22 k
+ [1m[32mjackson-jaxrs-providers          (B[m noarch   2.11.4-6.fc36       fedora     45 k
+ [1m[32mjackson-module-jaxb-annotations  (B[m noarch   2.11.4-7.fc36       fedora     47 k
+ [1m[32mjakarta-activation               (B[m noarch   1.2.2-6.fc36        fedora     79 k
+ [1m[32mjakarta-annotations              (B[m noarch   1.3.5-13.fc36       fedora     45 k
+ [1m[32mjavapackages-tools               (B[m noarch   6.0.0-7.fc36        fedora     25 k
+ [1m[32mjaxb-api                         (B[m noarch   2.3.3-6.fc36        fedora    109 k
+ [1m[32mjboss-jaxrs-2.0-api              (B[m noarch   1.0.0-18.fc36       fedora    112 k
+ [1m[32mjboss-logging                    (B[m noarch   3.4.1-11.fc36       fedora     57 k
+ [1m[32mjboss-logging-tools              (B[m noarch   2.2.1-8.fc36        fedora    222 k
+ [1m[32mjdeparser                        (B[m noarch   2.0.3-10.fc36       fedora    219 k
+ [1m[32mjss                              (B[m x86_64   5.1.0-1.fc36        fedora    1.2 M
+ [1m[32mldapjdk                          (B[m noarch   5.1.0-1.fc36        fedora    339 k
+ [1m[32mnss-tools                        (B[m x86_64   3.83.0-1.fc36       updates   531 k
+ [1m[32mopenldap-clients                 (B[m x86_64   2.6.3-1.fc36        updates   176 k
+ [1m[32mopenssl                          (B[m x86_64   1:3.0.5-2.fc36      updates   1.1 M
+ [1m[32mpki-resteasy-client              (B[m noarch   3.0.26-15.fc36      fedora    164 k
+ [1m[32mpki-resteasy-core                (B[m noarch   3.0.26-15.fc36      fedora    807 k
+ [1m[32mpki-resteasy-jackson2-provider   (B[m noarch   3.0.26-15.fc36      fedora     29 k
+ [1m[32mpublicsuffix-list                (B[m noarch   20210518-4.fc36     fedora     82 k
+ [1m[32mpython3-dogtag-pki               (B[m noarch   11.1.0-1.fc36       fedora    150 k
+ [1m[32mpython3-ldap                     (B[m x86_64   3.4.3-1.fc36        updates   216 k
+ [1m[32mpython3-pyasn1                   (B[m noarch   0.4.8-8.fc36        fedora    134 k
+ [1m[32mpython3-pyasn1-modules           (B[m noarch   0.4.8-8.fc36        fedora    212 k
+ [1m[32mslf4j                            (B[m noarch   1.7.32-3.fc36       fedora     69 k
+ [1m[32mslf4j-jdk14                      (B[m noarch   1.7.32-3.fc36       fedora     17 k
+ [1m[32mtomcat                           (B[m noarch   1:9.0.65-1.fc36     updates    90 k
+ [1m[32mtomcat-el-3.0-api                (B[m noarch   1:9.0.65-1.fc36     updates   106 k
+ [1m[32mtomcat-jsp-2.3-api               (B[m noarch   1:9.0.65-1.fc36     updates    65 k
+ [1m[32mtomcat-lib                       (B[m noarch   1:9.0.65-1.fc36     updates   5.9 M
+ [1m[32mtomcat-servlet-4.0-api           (B[m noarch   1:9.0.65-1.fc36     updates   284 k
+ [1m[32mtomcatjss                        (B[m noarch   8.1.0-1.fc36        fedora     37 k
+Installing weak dependencies:
+ [1m[32mtomcat-native                    (B[m x86_64   1:1.2.35-1.fc36     updates    79 k
+
+Transaction Summary
+================================================================================
+Install  60 Packages
+
+2022-11-13T15:36:42-0500 INFO Total download size: 31 M
+2022-11-13T15:36:42-0500 INFO Installed size: 109 M
+2022-11-13T15:36:42-0500 INFO Downloading Packages:
+2022-11-13T15:36:48-0500 INFO --------------------------------------------------------------------------------
+2022-11-13T15:36:48-0500 INFO Total                                           5.9 MB/s |  31 MB     00:05     
+2022-11-13T15:36:48-0500 DEBUG Using rpmkeys executable at /usr/bin/rpmkeys to verify signatures
+2022-11-13T15:36:48-0500 INFO Running transaction check
+2022-11-13T15:36:48-0500 INFO Transaction check succeeded.
+2022-11-13T15:36:48-0500 INFO Running transaction test
+2022-11-13T15:36:49-0500 INFO Transaction test succeeded.
+2022-11-13T15:36:49-0500 DDEBUG timer: transaction test: 769 ms
+2022-11-13T15:36:49-0500 INFO Running transaction
+2022-11-13T15:36:49-0500 DDEBUG RPM transaction start.
+2022-11-13T15:36:56-0500 DDEBUG RPM transaction over.
+2022-11-13T15:36:57-0500 DDEBUG timer: verify transaction: 441 ms
+2022-11-13T15:36:57-0500 DDEBUG timer: transaction: 7548 ms
+2022-11-13T15:36:57-0500 DEBUG Completion plugin: Generating completion cache...
+2022-11-13T15:36:57-0500 DEBUG Installed: apache-commons-cli-1.5.0-3.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: apache-commons-codec-1.15-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: apache-commons-io-1:2.8.0-7.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: apache-commons-lang3-3.12.0-5.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: apache-commons-logging-1.2-30.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: apache-commons-net-3.6-16.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-11.1.0-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-acme-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-base-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-ca-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-java-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-javadoc-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-kra-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-ocsp-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-server-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-theme-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-tks-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-tools-11.1.0-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: dogtag-pki-tps-11.1.0-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: ecj-1:4.23-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: esc-1.1.2-12.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: freeipa-healthcheck-core-0.11-2.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: httpcomponents-client-4.5.13-4.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: httpcomponents-core-4.4.13-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jackson-annotations-2.11.4-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jackson-core-2.11.4-7.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jackson-databind-2.11.4-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jackson-jaxrs-json-provider-2.11.4-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jackson-jaxrs-providers-2.11.4-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jackson-module-jaxb-annotations-2.11.4-7.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jakarta-activation-1.2.2-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jakarta-annotations-1.3.5-13.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: javapackages-tools-6.0.0-7.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jaxb-api-2.3.3-6.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jboss-jaxrs-2.0-api-1.0.0-18.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jboss-logging-3.4.1-11.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jboss-logging-tools-2.2.1-8.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jdeparser-2.0.3-10.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: jss-5.1.0-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: ldapjdk-5.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: nss-tools-3.83.0-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: openldap-clients-2.6.3-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: openssl-1:3.0.5-2.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: pki-resteasy-client-3.0.26-15.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: pki-resteasy-core-3.0.26-15.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: pki-resteasy-jackson2-provider-3.0.26-15.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: publicsuffix-list-20210518-4.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: python3-dogtag-pki-11.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: python3-ldap-3.4.3-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: python3-pyasn1-0.4.8-8.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: python3-pyasn1-modules-0.4.8-8.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: slf4j-1.7.32-3.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: slf4j-jdk14-1.7.32-3.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcat-1:9.0.65-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcat-el-3.0-api-1:9.0.65-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcat-jsp-2.3-api-1:9.0.65-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcat-lib-1:9.0.65-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcat-native-1:1.2.35-1.fc36.x86_64
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcat-servlet-4.0-api-1:9.0.65-1.fc36.noarch
+2022-11-13T15:36:57-0500 DEBUG Installed: tomcatjss-8.1.0-1.fc36.noarch
+2022-11-13T15:36:57-0500 INFO Complete!
+2022-11-13T15:36:57-0500 DDEBUG Cleaning up.
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/python3-pyasn1-modules-0.4.8-8.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/freeipa-healthcheck-core-0.11-2.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/httpcomponents-core-4.4.13-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/python3-dogtag-pki-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/slf4j-jdk14-1.7.32-3.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/tomcat-jsp-2.3-api-9.0.65-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/pki-resteasy-client-3.0.26-15.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/openldap-clients-2.6.3-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jboss-jaxrs-2.0-api-1.0.0-18.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/javapackages-tools-6.0.0-7.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/apache-commons-net-3.6-16.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-ldap-3.4.3-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/apache-commons-codec-1.15-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jackson-module-jaxb-annotations-2.11.4-7.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-server-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/pki-resteasy-core-3.0.26-15.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-ocsp-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jakarta-activation-1.2.2-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/ecj-4.23-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/slf4j-1.7.32-3.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/tomcatjss-8.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-base-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jaxb-api-2.3.3-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/apache-commons-logging-1.2-30.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-kra-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/esc-1.1.2-12.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jboss-logging-3.4.1-11.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jdeparser-2.0.3-10.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/ldapjdk-5.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-java-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/nss-tools-3.83.0-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/tomcat-servlet-4.0-api-9.0.65-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jackson-jaxrs-providers-2.11.4-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-theme-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-javadoc-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/httpcomponents-client-4.5.13-4.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/apache-commons-cli-1.5.0-3.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/publicsuffix-list-20210518-4.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/tomcat-lib-9.0.65-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jackson-jaxrs-json-provider-2.11.4-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/pki-resteasy-jackson2-provider-3.0.26-15.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/openssl-3.0.5-2.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jboss-logging-tools-2.2.1-8.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/apache-commons-io-2.8.0-7.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-tools-11.1.0-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-tps-11.1.0-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/tomcat-native-1.2.35-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jackson-annotations-2.11.4-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jakarta-annotations-1.3.5-13.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-acme-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jackson-databind-2.11.4-6.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/python3-pyasn1-0.4.8-8.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-tks-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/tomcat-9.0.65-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jackson-core-2.11.4-7.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-ca-11.1.0-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/tomcat-el-3.0-api-9.0.65-1.fc36.noarch.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/dogtag-pki-11.1.0-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/jss-5.1.0-1.fc36.x86_64.rpm removed
+2022-11-13T15:36:57-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/apache-commons-lang3-3.12.0-5.fc36.noarch.rpm removed
+
+
+
+2022-11-13T15:45:59-0500 INFO --- logging initialized ---
+2022-11-13T15:45:59-0500 DDEBUG timer: config: 1 ms
+2022-11-13T15:45:59-0500 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync, system-upgrade
+2022-11-13T15:45:59-0500 DEBUG DNF version: 4.14.0
+2022-11-13T15:45:59-0500 DDEBUG Command: dnf install -y 389-ds-base 
+2022-11-13T15:45:59-0500 DDEBUG Installroot: /
+2022-11-13T15:45:59-0500 DDEBUG Releasever: 36
+2022-11-13T15:45:59-0500 DEBUG cachedir: /var/cache/dnf
+2022-11-13T15:45:59-0500 DDEBUG Base command: install
+2022-11-13T15:45:59-0500 DDEBUG Extra commands: ['install', '-y', '389-ds-base']
+2022-11-13T15:45:59-0500 DEBUG User-Agent: constructed: 'libdnf (Fedora Linux 36; workstation; Linux.x86_64)'
+2022-11-13T15:45:59-0500 DEBUG repo: using cache for: phracek-PyCharm
+2022-11-13T15:45:59-0500 DEBUG phracek-PyCharm: using metadata from Sun 16 Oct 2022 12:24:52 AM EDT.
+2022-11-13T15:45:59-0500 DEBUG repo: using cache for: fedora
+2022-11-13T15:45:59-0500 DEBUG fedora: using metadata from Wed 04 May 2022 05:16:11 PM EDT.
+2022-11-13T15:45:59-0500 DEBUG repo: using cache for: fedora-cisco-openh264
+2022-11-13T15:45:59-0500 DEBUG fedora-cisco-openh264: using metadata from Thu 06 Oct 2022 07:02:51 AM EDT.
+2022-11-13T15:45:59-0500 DEBUG repo: using cache for: fedora-modular
+2022-11-13T15:45:59-0500 DEBUG fedora-modular: using metadata from Wed 04 May 2022 05:12:01 PM EDT.
+2022-11-13T15:46:00-0500 DEBUG repo: using cache for: updates
+2022-11-13T15:46:00-0500 DEBUG updates: using metadata from Sat 12 Nov 2022 08:07:58 PM EST.
+2022-11-13T15:46:00-0500 DEBUG repo: using cache for: updates-modular
+2022-11-13T15:46:00-0500 DEBUG updates-modular: using metadata from Sat 05 Nov 2022 01:09:17 PM EDT.
+2022-11-13T15:46:00-0500 DEBUG repo: using cache for: google-chrome
+2022-11-13T15:46:00-0500 DEBUG google-chrome: using metadata from Thu 10 Nov 2022 04:11:09 PM EST.
+2022-11-13T15:46:00-0500 DEBUG repo: using cache for: rpmfusion-nonfree-nvidia-driver
+2022-11-13T15:46:00-0500 DEBUG rpmfusion-nonfree-nvidia-driver: using metadata from Fri 11 Nov 2022 07:19:25 AM EST.
+2022-11-13T15:46:00-0500 DEBUG repo: using cache for: rpmfusion-nonfree-steam
+2022-11-13T15:46:00-0500 DEBUG rpmfusion-nonfree-steam: using metadata from Wed 24 Aug 2022 12:15:54 PM EDT.
+2022-11-13T15:46:00-0500 INFO Last metadata expiration check: 0:23:02 ago on Sun 13 Nov 2022 03:22:58 PM EST.
+2022-11-13T15:46:00-0500 DDEBUG timer: sack setup: 1058 ms
+2022-11-13T15:46:00-0500 DEBUG --> Starting dependency resolution
+2022-11-13T15:46:00-0500 DEBUG ---> Package cyrus-sasl-md5.x86_64 2.1.27-18.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package libdb-utils.x86_64 5.3.28-51.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Algorithm-Diff.noarch 1.2010-5.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Archive-Tar.noarch 2.40-2.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Compress-Raw-Bzip2.x86_64 2.101-480.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Compress-Raw-Lzma.x86_64 2.101-4.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-DB_File.x86_64 1.857-1.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Devel-Peek.x86_64 1.30-486.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-IO-Compress-Lzma.noarch 2.101-5.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-IO-Zlib.noarch 1:1.11-479.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Term-ReadLine.noarch 1.17-486.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Text-Diff.noarch 1.45-14.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Tie.noarch 4.6-486.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-debugger.noarch 1.60-486.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-meta-notation.noarch 5.34.1-486.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-sigtrap.noarch 1.09-486.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-threads.x86_64 1:2.26-449.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-threads-shared.x86_64 1.62-479.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package 389-ds-base.x86_64 2.1.5-1.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package 389-ds-base-libs.x86_64 2.1.5-1.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package openssl-perl.x86_64 1:3.0.5-2.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-Compress-Raw-Zlib.x86_64 2.101-481.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package perl-IO-Compress.noarch 2.102-481.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG ---> Package python3-lib389.noarch 2.1.5-1.fc36 will be installed
+2022-11-13T15:46:00-0500 DEBUG --> Finished dependency resolution
+2022-11-13T15:46:00-0500 DDEBUG timer: depsolve: 69 ms
+2022-11-13T15:46:00-0500 INFO Dependencies resolved.
+2022-11-13T15:46:00-0500 INFO ================================================================================
+ Package                     Arch       Version               Repository   Size
+================================================================================
+Installing:
+ [1m[32m389-ds-base                (B[m x86_64     2.1.5-1.fc36          updates     2.9 M
+Installing dependencies:
+ [1m[32m389-ds-base-libs           (B[m x86_64     2.1.5-1.fc36          updates     1.5 M
+ [1m[32mcyrus-sasl-md5             (B[m x86_64     2.1.27-18.fc36        fedora       43 k
+ [1m[32mlibdb-utils                (B[m x86_64     5.3.28-51.fc36        fedora      133 k
+ [1m[32mopenssl-perl               (B[m x86_64     1:3.0.5-2.fc36        updates      25 k
+ [1m[32mperl-Algorithm-Diff        (B[m noarch     1.2010-5.fc36         fedora       47 k
+ [1m[32mperl-Archive-Tar           (B[m noarch     2.40-2.fc36           fedora       72 k
+ [1m[32mperl-Compress-Raw-Bzip2    (B[m x86_64     2.101-480.fc36        fedora       34 k
+ [1m[32mperl-Compress-Raw-Lzma     (B[m x86_64     2.101-4.fc36          fedora       49 k
+ [1m[32mperl-Compress-Raw-Zlib     (B[m x86_64     2.101-481.fc36        updates      59 k
+ [1m[32mperl-DB_File               (B[m x86_64     1.857-1.fc36          fedora       81 k
+ [1m[32mperl-IO-Compress           (B[m noarch     2.102-481.fc36        updates     256 k
+ [1m[32mperl-IO-Compress-Lzma      (B[m noarch     2.101-5.fc36          fedora       74 k
+ [1m[32mperl-IO-Zlib               (B[m noarch     1:1.11-479.fc36       fedora       19 k
+ [1m[32mperl-Term-ReadLine         (B[m noarch     1.17-486.fc36         fedora       24 k
+ [1m[32mperl-Text-Diff             (B[m noarch     1.45-14.fc36          fedora       41 k
+ [1m[32mperl-Tie                   (B[m noarch     4.6-486.fc36          fedora       36 k
+ [1m[32mperl-debugger              (B[m noarch     1.60-486.fc36         fedora      139 k
+ [1m[32mperl-meta-notation         (B[m noarch     5.34.1-486.fc36       fedora       15 k
+ [1m[32mperl-sigtrap               (B[m noarch     1.09-486.fc36         fedora       21 k
+ [1m[32mperl-threads               (B[m x86_64     1:2.26-449.fc36       fedora       57 k
+ [1m[32mperl-threads-shared        (B[m x86_64     1.62-479.fc36         fedora       44 k
+ [1m[32mpython3-lib389             (B[m noarch     2.1.5-1.fc36          updates     869 k
+Installing weak dependencies:
+ [1m[32mperl-Devel-Peek            (B[m x86_64     1.30-486.fc36         fedora       37 k
+
+Transaction Summary
+================================================================================
+Install  24 Packages
+
+2022-11-13T15:46:00-0500 INFO Total download size: 6.5 M
+2022-11-13T15:46:00-0500 INFO Installed size: 24 M
+2022-11-13T15:46:00-0500 INFO Downloading Packages:
+2022-11-13T15:46:18-0500 INFO --------------------------------------------------------------------------------
+2022-11-13T15:46:18-0500 INFO Total                                           371 kB/s | 6.5 MB     00:17     
+2022-11-13T15:46:18-0500 DEBUG Using rpmkeys executable at /usr/bin/rpmkeys to verify signatures
+2022-11-13T15:46:18-0500 INFO Running transaction check
+2022-11-13T15:46:18-0500 INFO Transaction check succeeded.
+2022-11-13T15:46:18-0500 INFO Running transaction test
+2022-11-13T15:46:19-0500 INFO Transaction test succeeded.
+2022-11-13T15:46:19-0500 DDEBUG timer: transaction test: 335 ms
+2022-11-13T15:46:19-0500 INFO Running transaction
+2022-11-13T15:46:19-0500 DDEBUG RPM transaction start.
+2022-11-13T15:46:21-0500 DDEBUG RPM transaction over.
+2022-11-13T15:46:21-0500 DDEBUG timer: verify transaction: 303 ms
+2022-11-13T15:46:21-0500 DDEBUG timer: transaction: 2901 ms
+2022-11-13T15:46:21-0500 DEBUG Completion plugin: Generating completion cache...
+2022-11-13T15:46:22-0500 DEBUG Installed: 389-ds-base-2.1.5-1.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: 389-ds-base-libs-2.1.5-1.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: cyrus-sasl-md5-2.1.27-18.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: libdb-utils-5.3.28-51.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: openssl-perl-1:3.0.5-2.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Algorithm-Diff-1.2010-5.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Archive-Tar-2.40-2.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Compress-Raw-Bzip2-2.101-480.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Compress-Raw-Lzma-2.101-4.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Compress-Raw-Zlib-2.101-481.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-DB_File-1.857-1.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Devel-Peek-1.30-486.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-IO-Compress-2.102-481.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-IO-Compress-Lzma-2.101-5.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-IO-Zlib-1:1.11-479.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Term-ReadLine-1.17-486.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Text-Diff-1.45-14.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-Tie-4.6-486.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-debugger-1.60-486.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-meta-notation-5.34.1-486.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-sigtrap-1.09-486.fc36.noarch
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-threads-1:2.26-449.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: perl-threads-shared-1.62-479.fc36.x86_64
+2022-11-13T15:46:22-0500 DEBUG Installed: python3-lib389-2.1.5-1.fc36.noarch
+2022-11-13T15:46:22-0500 INFO Complete!
+2022-11-13T15:46:22-0500 DDEBUG Cleaning up.
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-IO-Compress-Lzma-2.101-5.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/perl-Compress-Raw-Zlib-2.101-481.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Archive-Tar-2.40-2.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-IO-Zlib-1.11-479.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/libdb-utils-5.3.28-51.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Text-Diff-1.45-14.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/python3-lib389-2.1.5-1.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-DB_File-1.857-1.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-meta-notation-5.34.1-486.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Tie-4.6-486.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/perl-IO-Compress-2.102-481.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/openssl-perl-3.0.5-2.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Compress-Raw-Bzip2-2.101-480.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-debugger-1.60-486.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-sigtrap-1.09-486.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/389-ds-base-libs-2.1.5-1.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-threads-shared-1.62-479.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Algorithm-Diff-1.2010-5.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Devel-Peek-1.30-486.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-threads-2.26-449.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Term-ReadLine-1.17-486.fc36.noarch.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/updates-a50f2ed408319fa8/packages/389-ds-base-2.1.5-1.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/perl-Compress-Raw-Lzma-2.101-4.fc36.x86_64.rpm removed
+2022-11-13T15:46:22-0500 DDEBUG /var/cache/dnf/fedora-e58e3c9673d413e5/packages/cyrus-sasl-md5-2.1.27-18.fc36.x86_64.rpm removed
