@@ -1,6 +1,6 @@
 # request-review-cert.py
 
-*request-review-cert.py* issues a bash command for a request to a a dogtag PKI server, extracts the necessary information (request ID) from the request, and then issues a bash review command to automatically approve the client certificate within a local instance.
+*request-review-cert.py* issues a bash command for a request to a dogtag PKI server, extracts the necessary information (request ID) from the request, and then issues a bash review command to automatically approve the client certificate within a local instance.
 
 
 ## Steps to configure DS and CA servers on a VM and run the script
